@@ -2,15 +2,16 @@ const express = require('express');
 const router = express.Router();
 
 const userController = require('../controllers/users');
+const {saveUser} = require('../middleware/validate');
 
 router.get('/', userController.getAll); 
 
 router.get('/:id', userController.getSingle);
 
-router.post('/', userController.createUser);
+router.post('/',saveUser, userController.createUser);
 
-router.put('/:id', userController.updateUser);
+router.put('/:id',saveUser, userController.updateUser);
 
-router.delete('/:id',userController.deleteUser);
+router.delete('/:id', userController.deleteUser);
 
 module.exports = router;
