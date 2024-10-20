@@ -1,0 +1,32 @@
+###
+GET http://localhost:3000/users 
+
+###
+GET http://localhost:3000/users/671465a68d78c41d41acd71e
+
+###
+POST http://localhost:3000/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName" : "Carolina",
+    "lastName" : "Torres",
+    "email" : "caro.torres@gmail.com",
+    "course" : "Eng 360",
+    "lastLogin" : "10-19-2024"
+}
+
+###Update a product
+PUT http://localhost:3000/users/671465a68d78c41d41acd71e
+Content-Type: application/json
+
+{
+    "firstName" : "Jonathan",
+    "lastName" : "Ponce",
+    "email" : "anzianoponce11@gmail.com",
+    "course" : "cse 341",
+    "lastLogin" : "10-19-2024"
+}
+
+### Delete a product
+DELETE http://localhost:3000/users/6705498016938d1c4b49b018

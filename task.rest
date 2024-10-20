@@ -1,0 +1,30 @@
+###
+GET http://localhost:3000/tasks 
+
+###
+GET http://localhost:3000/tasks/671465a68d78c41d41acd71e
+
+###
+POST http://localhost:3000/tasks HTTP/1.1
+Content-Type: application/json
+
+{
+    "taskName" : "Call Paolo tomorrow morning",
+    "taskCreatedDate" : "10-19-2024",
+    "userCreatedTask" : "Jonathan Ponce",
+    "taskDeadLine" : "10-25-2024"
+}
+
+###Update a product
+PUT http://localhost:3000/tasks/671465a68d78c41d41acd71e
+Content-Type: application/json
+
+{
+    "taskName" : "",
+    "taskCreatedDate" : "",
+    "userCreatedTask" : "",
+    "taskDeadLine" : ""
+}
+
+### Delete a product
+DELETE http://localhost:3000/tasks/6714692346583f1ef8059a40
