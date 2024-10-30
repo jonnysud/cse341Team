@@ -5,8 +5,8 @@ const router = require('express').Router();
 
 router.use('/users', require('./users'));
 router.use('/tasks', require('./tasks'));
-router.use('/tags', require('./tags'));
-router.use('/tasksTags', require('./tasks'));
+router.use('/courses', require('./courses'));
+router.use('/professors', require('./professors'));
 
 
 

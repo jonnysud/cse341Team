@@ -23,10 +23,10 @@ Content-Type: application/json
 {
     "firstName" : "Jonathan",
     "lastName" : "Ponce",
-    "email" : "anzianoponce11@gmail.com",
+    "email" : "anzianoponce1996@gmail.com",
     "course" : "cse 341",
     "lastLogin" : "10-19-2024"
 }
 
 ### Delete a product
-DELETE http://localhost:3000/users/6705498016938d1c4b49b018
+DELETE http://localhost:3000/users/6714671146583f1ef8059a3f
