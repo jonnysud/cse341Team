@@ -1,0 +1,31 @@
+###
+GET http://localhost:3000/professors 
+
+###
+GET http://localhost:3000/professors/6722d505d9c049250e856429
+
+###
+POST http://localhost:3000/professors HTTP/1.1
+Content-Type: application/json
+
+{
+    "professorName" : "Carolina Torres",
+    "professorCourse" : "Arte y Cultura",
+    "professorEmail" : "carotorres@gmail.com",
+    "professorAge" : "30"
+    
+}
+
+###Update a product
+PUT http://localhost:3000/professors/671465a68d78c41d41acd71e
+Content-Type: application/json
+
+{
+    "professorName" : "Jonathan Ponce",
+    "professorCourse" : "EPT",
+    "professorEmail" : "anzianoponce11@gmail.com",
+    "professorAge" : "27"
+}
+
+### Delete a product
+DELETE http://localhost:3000/professors/6714671146583f1ef8059a3f
